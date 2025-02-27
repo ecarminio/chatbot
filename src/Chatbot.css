@@ -1,0 +1,160 @@
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+
+  box-sizing: border-box;
+  overflow-y: none;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  height: 100%;
+}
+
+.chatbox {
+  box-sizing: border-box;
+  flex: 1;
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+.message {
+  margin-top: 1rem;
+  max-width: 45%;
+}
+
+.message.user {
+  align-self: flex-end;
+  text-align: left;
+  flex: 1;
+  white-space: wrap;
+  word-wrap: break-word;
+  font-size: 1.1em;
+}
+
+.message.bot {
+  align-self: flex-start;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.promptPannel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  box-sizing: border-box;
+  border: 2px #ffffff10 solid;
+  border-radius: 1rem;
+}
+
+.input-area {
+  display: flex;
+  width: 100%;
+  white-space: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: auto;
+  align-items: end;
+}
+
+.input-area textarea {
+  outline: none;
+  flex: 1;
+  padding: .7rem 1rem;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  min-height: 3rem;
+  max-height: 9rem;
+  resize: none; /* Disable manual resize so JS handles it */
+  overflow-y: scroll;
+  font-size: 1.1em;
+  background-color: #252527;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input[type="text"] {
+  flex: 1;
+  border: 2px solid #cccccc65;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.sendRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  padding-top: .5rem;
+}
+
+.copy-button {
+  background: none;
+  padding: .5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff65;
+  color: #ffffff65;
+}
+
+.copied-text {
+  font-size: 12px;
+  color: #4caf50;
+  margin-top: 2px;
+  align-self: center;
+}
+
+.welcome-container {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff65;
+}
+
+.welcome-message {
+  font-weight: 200;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.subheading {
+  font-weight: 200;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.clearSend-button {
+  padding: .8rem 2rem;
+  border: none;
+  background-color: #252527;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 10rem; 
+}
+
+
